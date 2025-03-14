@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- mycss -->
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <!-- favIcon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <!-- boxIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- aos -->
+    <link
+      rel=" stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+    <!-- lightBox -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css"
+    />
+    <!-- CSS lightBox -->
+
+    <!-- external -->
+    <title>Sanctuary</title>
+  </head>
+
+  <body>
+    <!-- nav>.navBar>(ul.logo#logo>li>a>img)+(ul.navLink>li*4>a>i+span)+(ul.underSide>li>a>img+span)|c -->
+    <nav>
+      <div class="navBar">
+        <ul class="logo" id="logo">
+          <li>
+            <a href="#home"><img src="./img/logo.webp" alt="logo" /></a>
+          </li>
+        </ul>
+        <!-- /#logo.logo -->
+        <ul class="navLink">
+          <li class="active">
+            <a href="#home">
+              <i class="bx bx-home-alt"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#team"
+              ><i class="bx bx-male-female"></i><span>Team</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#products"
+              ><i class="bx bxs-briefcase-alt-2"></i><span>Products</span></a
+            >
+          </li>
+
+          <li>
+            <a href="#contact"
+              ><i class="bx bxs-contact"></i><span>Contact</span></a
+            >
+          </li>
+        </ul>
+        <!-- /.navLink -->
+        <ul class="underSide">
+          <li>
+            <a href="./profile.html" target="_blank"
+              ><img src="./img/profile.jpg" alt="profile" /><span
+                >Profile</span
+              ></a
+            >
+          </li>
+        </ul>
+        <!-- /.underSide -->
+      </div>
+      <!-- /.navBar -->
+    </nav>
+    <!-- main>.container>(section#home>.homeContainer)+(section#team>.teamContainer)+(section#products>.productsContainer)+(section#contacts>.contactsContainer)|c -->
+    <main>
+      <div class="container">
+        <section id="home">
+          <div class="homeContainer">
+            <!-- .changeMode>button#*2>i|c -->
+            <div class="changeMode">
+              <button id="lightMode">
+                <i class="fa-solid fa-sun"></i>
+              </button>
+              <!-- / -->
+              <button id="darkMode">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <!-- / -->
+            </div>
+            <!-- /.changeMode -->
+
+            <!-- video#[id="video"]+.homeInner>(h1>span^h2>span^p+a.btnDefault)|c -->
+            <video src="./video/candy.mp4" id="video" muted></video>
+            <!-- / -->
+            <div class="homeInner">
+              <h1>Strange <span>Sanctuary </span> Candy</h1>
+
+              <h2>como and <span>fill yourself</span></h2>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                fugiat asperiores dicta omnis corrupti rerum beatae voluptas
+                eius cupiditate repellat.
+              </p>
+
+              <a href="#contact" class="btnDefault">Contact us </a>
+              <!-- /.btnDefault -->
+            </div>
+            <!-- /.homeInner -->
+          </div>
+          <!-- /.homeContainer -->
+        </section>
+        <!-- /#home -->
+        <section id="team">
+          <div class="teamContainer">
+            <!-- ul.teamCard*4>li>img^li>p{nome}^li>i*5|c -->
+            <ul class="teamCard">
+              <li><img src="./img/card1.webp" alt="logo" /></li>
+              <li>
+                <p>Billy</p>
+              </li>
+              <li>
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-tiktok"></i>
+                <i class="bx bxl-linkedin-square"></i>
+              </li>
+            </ul>
+            <!-- /.teamCard -->
+            <ul class="teamCard">
+              <li><img src="./img/card2.webp" alt="" /></li>
+              <li>
+                <p>Lana</p>
+              </li>
+              <li>
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-tiktok"></i>
+                <i class="bx bxl-linkedin-square"></i>
+              </li>
+            </ul>
+            <!-- /.teamCard -->
+            <ul class="teamCard">
+              <li><img src="./img/card3.webp" alt="" /></li>
+              <li>
+                <p>Jesus</p>
+              </li>
+              <li>
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-tiktok"></i>
+                <i class="bx bxl-linkedin-square"></i>
+              </li>
+            </ul>
+            <!-- /.teamCard -->
+            <ul class="teamCard">
+              <li><img src="./img/card4.webp" alt="" /></li>
+              <li>
+                <p>Zé da Bike</p>
+              </li>
+              <li>
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-tiktok"></i>
+                <i class="bx bxl-linkedin-square"></i>
+              </li>
+            </ul>
+            <!-- /.teamCard -->
+          </div>
+          <!-- /.teamContainer -->
+        </section>
+        <!-- /#team -->
+        <section id="products">
+          <div class="productsContainer grid">
+            <!-- .productsInner.item.cake>a[href="" data-lightbox="" data-title=""]>img|C -->
+            <div class="productsInner item cake">
+              <a href="./img/cake1.jpg" data-lightbox="cake" data-title="cake">
+                <img src="./img/cake1Thumb.png" alt="cake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cake 1-->
+
+            <div class="productsInner item cake">
+              <a href="./img/cake2.jpg" data-lightbox="cake" data-title="cake">
+                <img src="./img/cake2Thumb.png" alt="cake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cake 2 -->
+
+            <div class="productsInner item cake">
+              <a href="./img/cake3.jpg" data-lightbox="cake" data-title="cake">
+                <img src="./img/cake3Thumb.png" alt="cake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cake 3 -->
+
+            <div class="productsInner item cake">
+              <a href="./img/cake4.jpg" data-lightbox="cake" data-title="cake">
+                <img src="./img/cake4Thumb.png" alt="cake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cake 4-->
+
+            <!-- ctrl+d > vai selecionando até onde quiser da linha inicial abaixo -->
+
+            <div class="productsInner item cupcake">
+              <a
+                href="./img/cupcake1.jpg"
+                data-lightbox="cupcake"
+                data-title="cupcake"
+              >
+                <img src="./img/cupcake1Thumb.png" alt="cupcake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cupcake 1-->
+
+            <div class="productsInner item cupcake">
+              <a
+                href="./img/cupcake2.jpg"
+                data-lightbox="cupcake"
+                data-title="cupcake"
+              >
+                <img src="./img/cupcake2Thumb.png" alt="cupcake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cupcake 2-->
+
+            <div class="productsInner item cupcake">
+              <a
+                href="./img/cupcake3.jpg"
+                data-lightbox="cupcake"
+                data-title="cupcake"
+              >
+                <img src="./img/cupcake3Thumb.png" alt="cupcake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cupcake 3 -->
+
+            <div class="productsInner item cupcake">
+              <a
+                href="./img/cupcake4.jpg"
+                data-lightbox="cupcake"
+                data-title="cupcake"
+              >
+                <img src="./img/cupcake4Thumb.png" alt="cupcake" />
+              </a>
+            </div>
+            <!-- /.productsInner item cupcake 4-->
+
+            <div class="productsInner item candy">
+              <a
+                href="./img/candy1.jpg"
+                data-lightbox="candy"
+                data-title="candy"
+              >
+                <img src="./img/candy1Thumb.png" alt="candy" />
+              </a>
+            </div>
+            <!-- /.productsInner item candy 1-->
+
+            <div class="productsInner item candy">
+              <a
+                href="./img/candy2.jpg"
+                data-lightbox="candy"
+                data-title="candy"
+              >
+                <img src="./img/candy2Thumb.png" alt="candy" />
+              </a>
+            </div>
+            <!-- /.productsInner item candy 2-->
+
+            <div class="productsInner item candy">
+              <a
+                href="./img/candy3.jpg"
+                data-lightbox="candy"
+                data-title="candy"
+              >
+                <img src="./img/candy3Thumb.png" alt="candy" />
+              </a>
+            </div>
+            <!-- /.productsInner item cupcake 3 -->
+
+            <div class="productsInner item candy">
+              <a
+                href="./img/candy4.jpg"
+                data-lightbox="candy"
+                data-title="candy"
+              >
+                <img src="./img/candy4Thumb.png" alt="candy" />
+              </a>
+            </div>
+            <!-- /.productsInner item candy 4-->
+          </div>
+          <!-- /.productsContainer -->
+
+          <!-- ul.filter.filterGroup>li.active[data-filter=""]>h4{all}^li[data-filter=".cake"]>h4{cake}^li[data-filter=".cupcake"]>h4{cupcake}^li[data-filter=".candy"]>h4{candy}|c -->
+          <ul class="filter filterGroup">
+            <li class="active" data-filter="*">
+              <h4>all</h4>
+            </li>
+            <!-- /.active -->
+            <li data-filter=".cake">
+              <h4>cake</h4>
+            </li>
+            <li data-filter=".cupcake">
+              <h4>cupcake</h4>
+            </li>
+            <li data-filter=".candy">
+              <h4>candy</h4>
+            </li>
+          </ul>
+          <!-- /.filter filterGroup -->
+        </section>
+        <!-- /#products -->
+
+        <section id="contact">
+          <div class="contactContainer">
+            <!-- .localization>h1>span^iframe[id="mapa"]^form>ul.contactForm>li*4>i+input[placeholder=""]^li>textarea[placeholder=""]^li.btnFit>input:submit.btnDefault[value="send"]+input:reset.btnDefault[value="clear"]^li>p>input:checkbox|c -->
+            <div class="localization">
+              <h1>Contact <span>us</span></h1>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8702.355411203785!2d-46.43039236333425!3d-23.500480811700434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63dda7be6fb9%3A0xa74e7d5a53104311!2sSenac%20S%C3%A3o%20Miguel%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1740784147103!5m2!1spt-BR!2sbr"
+                frameborder="0"
+                id="mapa"
+              ></iframe>
+              <!-- /#mapa -->
+            </div>
+            <!-- /.localization -->
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <ul class="contactForm">
+                <li>
+                  <i class="bx bxs-user-check"></i>
+                  <input type="text" placeholder="name: " name="name" />
+                </li>
+
+                <li>
+                  <i class="bx bxs-envelope"></i>
+                  <input type="email" placeholder="e-mail: " name="email" />
+                </li>
+                <li>
+                  <i class="bx bxs-phone-call"></i>
+                  <input
+                    type="tel"
+                    placeholder="phone: "
+                    name="phone"
+                    onkeypress="$(this).mask('(00)00000-0000')"
+                  />
+                </li>
+                <li>
+                  <i class="bx bxs-chat"></i>
+                  <input
+                    required
+                    type="text"
+                    placeholder="subject: "
+                    name="subject"
+                  />
+                </li>
+                <!-- <li>
+                                <i class=""></i>
+                                <input type="text" placeholder="" name="">
+                            </li> -->
+                <li>
+                  <textarea
+                    required
+                    placeholder="message: "
+                    name="message"
+                  ></textarea>
+                  <!-- /# -->
+                </li>
+
+                <li class="btnFit">
+                  <input type="submit" value="send" class="btnDefault" />
+                  <input type="reset" value="clear" class="btnDefault" />
+                </li>
+                <!-- /.btnFit -->
+                <li>
+                  <p>
+                    <input type="checkbox" />
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde quibusdam ullam nobis. Libero, amet qui.
+                  </p>
+                </li>
+              </ul>
+              <!-- /.contactForm -->
+
+              <input
+                type="hidden"
+                name="accessKey"
+                value="2a88c4bb-45be-4e0f-a1c4-2ae74f190fde"
+              />
+              <input
+                type="hidden"
+                value="redirectTo"
+                value="http://127.0.0.1:5502/thanks.html"
+              />
+            </form>
+          </div>
+          <!-- /.contactsContainer -->
+
+          <!-- footer>ul.footerContainer>li>h1{Sanctuary }>span{strange }{ candies}^^li*4>i^lip{&copy; Copyright all rights reserved 2025 sanctuary}|c -->
+          <footer>
+            <ul class="footerContainer">
+              <li>
+                <h1>Sanctuary <span>strange </span> candies</h1>
+              </li>
+              <li>
+                <i
+                  class="bx bxl-facebook-circle"
+                  data-url="https://www.facebook.com/user"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="bx bxl-instagram"
+                  data-url="https://www.instagran.com/user"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="bx bxl-tiktok"
+                  data-url="https://www.tiktok.com/user"
+                ></i>
+              </li>
+              <li>
+                <i
+                  class="bx bxl-linkedin-square"
+                  data-url="https://www.linkedin.com/user"
+                ></i>
+              </li>
+              <lip>&copy; Copyright all rights reserved 2025 sanctuary</lip>
+            </ul>
+            <!-- /.footerContainer -->
+          </footer>
+        </section>
+        <!-- /#contacts -->
+      </div>
+      <!-- /.container -->
+    </main>
+
+    <!-- script -->
+
+    <!-- https://cdnjs.com/ -->
+
+    <!-- regionExternal -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- jQuerymMask -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <!-- lightBox -->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- isotope -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <!-- endRegionExternal -->
+    <script src="./js/script.js"></script>
+    <!-- myScript -->
+
+    <!-- endScript -->
+  </body>
+</html>
+
+<!-- Roteiro de produção
+1 - Estrutura de pastas e arquivos
+2 - Otimizando processos no vs code
+3 - Cdns
+4 - Menu e Container
+5 - Home
+6 - Team
+7 - Products
+8 - Contact
+9 - Thanks
+10 -  Profile
+
+-->
