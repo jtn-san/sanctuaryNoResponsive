@@ -1,3 +1,9 @@
+window.addEventListener("load", ()=> {
+let video = window.document.querySelector("#video")
+video.play()
+video.loop = true
+});
+
 $(document).ready(function(){
     $(".grid").isotope({ itemSelector: ".item",});
     
@@ -10,14 +16,6 @@ $(".filterGroup").on("click", "li", function(){
   });
 });
 
-
-
-window.addEventListener("load", ()=> {
-let video = window.document.querySelector("#video")
-video.play()
-video.loop = true
-
-});
 
 // temas
 const btnClaro = document.getElementById("lightMode");
